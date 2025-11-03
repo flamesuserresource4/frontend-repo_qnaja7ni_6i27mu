@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin, Phone } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -15,13 +15,19 @@ const Contact = () => {
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="mailto:you@example.com"
+            href="mailto:aymenamrane359@gmail.com"
             className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-white/90"
           >
             Email me
           </a>
           <a
-            href="https://github.com/"
+            href="tel:+213542576162"
+            className="rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+          >
+            <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +213 542 576 162</div>
+          </a>
+          <a
+            href="https://github.com/mou-ny"
             target="_blank"
             rel="noreferrer"
             className="rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
@@ -29,7 +35,7 @@ const Contact = () => {
             <div className="flex items-center gap-2"><Github className="h-4 w-4" /> GitHub</div>
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/aymen-amr"
             target="_blank"
             rel="noreferrer"
             className="rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
@@ -37,6 +43,7 @@ const Contact = () => {
             <div className="flex items-center gap-2"><Linkedin className="h-4 w-4" /> LinkedIn</div>
           </a>
         </div>
+        <div className="mt-6 text-xs text-white/60">Biskra, Algeria • Open to relocation</div>
       </div>
     </section>
   );

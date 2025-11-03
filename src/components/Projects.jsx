@@ -3,23 +3,32 @@ import { ExternalLink, Rocket } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Neon Dashboard',
-    description: 'A performant analytics dashboard with real-time charts and immersive micro-interactions.',
-    tags: ['React', 'Tailwind', 'Framer Motion'],
-    link: '#'
+    title: 'UniFlow — Student Management Platform',
+    description:
+      'Full‑stack academic platform: task orchestration, intelligent note‑taking, course tracking, grade analytics, calendar sync, Pomodoro, and gamification. Boosted student productivity by ~20%.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
+    link: '#',
+    period: 'Apr 2025 – May 2025',
+    role: 'Full‑Stack Developer',
   },
   {
-    title: '3D Product Showcase',
-    description: 'Interactive 3D experience blending product storytelling with smooth scroll-driven animations.',
-    tags: ['Three.js', 'Spline', 'GSAP'],
-    link: '#'
+    title: 'Directis 360 — School Management System',
+    description:
+      'Delivered a custom enterprise frontend that digitized 100% of school operations with intelligent workflow automation, reducing admin overhead by 60%.',
+    tags: ['React', 'TypeScript', 'Design System'],
+    link: '#',
+    period: 'Jul 2025 – Sep 2025',
+    role: 'Frontend Developer + Limited Backend',
   },
   {
-    title: 'SaaS Marketing Site',
-    description: 'Conversion-focused site with a custom component library and delightful dark mode.',
-    tags: ['Next.js', 'Design Systems', 'SEO'],
-    link: '#'
-  }
+    title: 'Academic Project Portfolio',
+    description:
+      'Interactive Task Manager (Java Swing), Gaming Suite, Digital Drawing Board with real‑time collab, plus A+ presentations on IoT & Smart Home interfaces.',
+    tags: ['Java', 'Swing', 'Algorithms', 'Collaboration'],
+    link: 'https://github.com/mou-ny',
+    period: 'Sep 2022 – May 2025',
+    role: 'Student Projects',
+  },
 ];
 
 const Projects = () => {
@@ -41,6 +50,8 @@ const Projects = () => {
             <a
               key={p.title}
               href={p.link}
+              target={p.link?.startsWith('http') ? '_blank' : undefined}
+              rel={p.link?.startsWith('http') ? 'noreferrer' : undefined}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-white/20 hover:bg-white/[0.06]"
             >
               <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100" style={{
@@ -48,7 +59,10 @@ const Projects = () => {
               }} />
               <div className="relative">
                 <div className="flex items-start justify-between gap-3">
-                  <h3 className="text-lg font-semibold">{p.title}</h3>
+                  <div>
+                    <h3 className="text-lg font-semibold">{p.title}</h3>
+                    <div className="mt-1 text-xs text-white/60">{p.role} • {p.period}</div>
+                  </div>
                   <ExternalLink className="h-4 w-4 text-white/60 transition group-hover:text-white" />
                 </div>
                 <p className="mt-2 text-sm text-white/70">{p.description}</p>

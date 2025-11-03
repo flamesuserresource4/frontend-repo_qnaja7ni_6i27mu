@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 backdrop-blur">
               <Rocket className="h-5 w-5 text-white" />
             </div>
-            <span className="text-lg font-semibold text-white">Your Name</span>
+            <span className="text-lg font-semibold text-white">Aymen Amrane</span>
           </div>
           <nav className="hidden gap-6 text-sm text-white/80 md:flex">
             <a href="#about" className="hover:text-white">About</a>
@@ -31,7 +31,7 @@ const Hero = () => {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/"
+              href="https://github.com/mou-ny"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl bg-white/10 p-2 text-white hover:bg-white/20"
@@ -40,7 +40,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://linkedin.com/in/aymen-amr"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl bg-white/10 p-2 text-white hover:bg-white/20"
@@ -55,13 +55,14 @@ const Hero = () => {
         <div className="pointer-events-auto mt-10 max-w-2xl">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-white/80 backdrop-blur">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-            Available for freelance & full-time
+            Based in Biskra, Algeria • Open to relocation & remote
           </div>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-            I build interactive experiences at the intersection of design & code.
+            Web Developer crafting scalable, user-first products with a playful 3D touch.
           </h1>
           <p className="mt-4 text-base text-white/80 sm:text-lg">
-            Frontend-focused developer crafting modern, performant interfaces with a playful touch.
+            Frontend specialist with solid backend and database foundations, currently pursuing an AI MSc. I transform
+            traditional workflows into intuitive digital tools.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a
